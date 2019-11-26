@@ -74,14 +74,14 @@ class ShowMoreText extends Component {
                 <Truncate
                     lines={!expanded && lines}
                     ellipsis={(
-                        <span>... <a href='#' className={anchorClass} onClick={this.toggleLines}>{more}</a></span>
+                        <span>... <a href='javascript:void(0);' className={anchorClass} onClick={this.toggleLines}>{more}</a></span>
                     )}
                     onTruncate={this.handleTruncate}
                 >
                     {children}
                 </Truncate>
                 {!truncated && expanded && (
-                    <span> <a href='#' className={anchorClass} onClick={this.toggleLines}>{less}</a></span>
+                    <span> <a href='javascript:void(0);' className={anchorClass} onClick={this.toggleLines}>{less}</a></span>
                 )}
             </div>
         );
